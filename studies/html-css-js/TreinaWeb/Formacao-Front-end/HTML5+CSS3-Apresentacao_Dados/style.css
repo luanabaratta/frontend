@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: rgba(193, 89, 89);
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.lista {
+    list-style: decimal;
+}
+
+.lista2 {
+    list-style: url("img/circle.png");
+}

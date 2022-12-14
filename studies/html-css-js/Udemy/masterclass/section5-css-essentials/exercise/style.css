@@ -1,0 +1,56 @@
+.nav > a {
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 20px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.25s ease-in;
+}
+
+.nav > a:hover {
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+}
+
+.personal-img {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.personal-img::before {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    transform: rotate(90deg);
+    transition: all 0.25s ease-in-out;
+}
+
+.personal-img:hover::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+.personal-img h2 {
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.personal-img:hover h2 {
+    right: 50%;
+}

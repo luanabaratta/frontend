@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav > a  {
+    /*display: block;
+    display: inline;*/
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+    margin: 5px;
+
+    /*display: flex;*/
+    /*display: grid;*/
+
+}
+
+.hero {
+    height: 700px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(137, 154, 79, 0.5)
+    ),
+    url("./img/hero-bg.jpg");
+}
+
+.hero  h6 {
+    font-size: 2em;
+}
+
+.hero p {
+    height: 10em;
+    width: 10em;
+
+    height: 10rem;
+    width: 10rem;
+}
+
+.title-container {
+    position: relative;
+}
+
+.personal {
+    height: 600px;
+    width: 800px;
+    object-fit: cover;
+}
+
+.personal-info__title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.experience i:first-child {
+    color: blue;
+}
+
+.experience li:last-child{
+    color: lightgray;
+}
+
+.experience li:nth-child(4){
+    text-decoration: underline 2px solid black;
+}
+
+.testimonial {
+    display: inline-block;
+    border: 2px solid green;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+.pseudo-el {
+    position: relative;
+}
+
+.pseudo-el::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    left: 0;
+    bottom: 0;
+    background-color: magenta;
+}
+
+input[type="Email"] {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    font-size: 20px;
+}

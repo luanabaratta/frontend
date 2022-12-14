@@ -1,0 +1,14 @@
+h1 + span {
+    background-color: yellow;
+    color: brown;
+}
+
+h1 ~ span {
+    background-color: #00ff88;
+    color: #2b134b;
+}
+
+li > span {
+    background-color: red;
+    color: white;
+}
